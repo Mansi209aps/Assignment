@@ -7,6 +7,8 @@ import { DiscordStrategy } from './src/utils/discord';
 
 const app = express();
 
+const PORT = process.env.PORT || 5000;
+
 require('dotenv').config();
 
 app.use(session({
@@ -44,7 +46,7 @@ mongoose
     .then(() => {
         app.listen(5000, () => {
             console.log("MongoDB connection successfully.........")
-            console.log('Server is running on http://localhost:5000');
+            console.log(`Server is running on port ${PORT}`);
         });
     })
     .catch(err => {
