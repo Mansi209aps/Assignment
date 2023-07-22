@@ -31,5 +31,8 @@
     "@types/express-session": "^1.17.7",
     "@types/passport": "^1.0.12",
     "@types/passport-discord": "^0.1.6"
+  },
+  "engines": {
+    "node": ">=14 <15"
   }
 }
